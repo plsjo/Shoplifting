@@ -1,42 +1,42 @@
 button {
     position: absolute;
-    -webkit-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-    -moz-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-    -o-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-    animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -webkit-animation: moveX 0.9s linear 0s infinite alternate, moveY 1.9s linear 0s infinite alternate;
+    -moz-animation: moveX 0.9s linear 0s infinite alternate, moveY 1.9s linear 0s infinite alternate;
+    -o-animation: moveX 0.9s linear 0s infinite alternate, moveY 1.9s linear 0s infinite alternate;
+    animation: moveX 0.9s linear 0s infinite alternate, moveY 1.9s linear 0s infinite alternate;
   }
   
   @-webkit-keyframes moveX {
-    from { left: 0; } to { left: 480px; }
+    from { left: 0; } to { left: 700px; }
   }
   @-moz-keyframes moveX {
-    from { left: 0; } to { left: 480px; }
+    from { left: 0; } to { left: 700px; }
   }
   @-o-keyframes moveX {
-    from { left: 0; } to { left: 480px; }
+    from { left: 0; } to { left: 700px; }
   } 
   @keyframes moveX {
-    from { left: 0; } to { left: 480px; }
+    from { left: 0; } to { left: 700px; }
   }
   
   @-webkit-keyframes moveY {
-    from { top: 0; } to { top: 280px; }
+    from { top: 0; } to { top: 535px; }
   }
   @-moz-keyframes moveY {
-    from { top: 0; } to { top: 280px; }
+    from { top: 0; } to { top: 535px; }
   }
   @-o-keyframes moveY {
-    from { top: 0; } to { top: 280px; }
+    from { top: 0; } to { top: 535px; }
   }
   @keyframes moveY {
-    from { top: 0; } to { top: 280px; }
+    from { top: 0; } to { top: 535px; }
   }  
   
 
   button {
     background-color: white; 
     color: black; 
-    border: 2px solid #04AA6D;
+    border: 1px solid #04AA6D;
   }
   
   button:hover {
@@ -78,13 +78,15 @@ body {
 }
 
 .box {
-    background-color: #7cb3ce;
+  background-image: url("grocery.jpg");
+  background-size: cover;
+  background-color: #7cb3ce;
   margin: 0 auto;
-  width: 550px;
-  height: 300px;
+  width: 772px;
+  height: 562px;
   position: relative;
-  box-shadow: inset 0 0 20px #155;
+  /*box-shadow: inset 0 0 20px #155;*/
   border-radius: 10px;
-  border: 1px solid #111;
+  border: 2px solid #60320f;
   overflow: hidden;
 }
