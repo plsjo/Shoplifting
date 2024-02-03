@@ -14,7 +14,7 @@ button {
   }
   @-o-keyframes moveX {
     from { left: 0; } to { left: 480px; }
-  }
+  } 
   @keyframes moveX {
     from { left: 0; } to { left: 480px; }
   }
@@ -31,6 +31,18 @@ button {
   @keyframes moveY {
     from { top: 0; } to { top: 280px; }
   }  
+  
+
+  button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+  }
+  
+  button:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
 
 body {
     background-color: none;
@@ -61,10 +73,8 @@ body {
 }
 */
 .hello {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .box {
