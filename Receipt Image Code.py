@@ -7,7 +7,7 @@ import pandas as pd
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Users\\lin23\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract'
 
 # Read image from which text needs to be extracted
-img = cv2.imread("Sweet_Mama.jpeg")
+img = cv2.imread("Casa.jpg")
 
 # Preprocessing the image starts
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -44,7 +44,7 @@ for key, value in item_price_dict.items():
     message += f"| {item} | {price} |\n"
 
 # Set your OpenAI API key
-openai.api_key = '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'
+openai.api_key = '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'
 
 # Use the chat/completions endpoint for ChatGPT Turbo
 response = openai.ChatCompletion.create(
