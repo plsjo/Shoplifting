@@ -1,10 +1,12 @@
-function change() {
-    document.getElementById("press").style.display = "none";
-    document.getElementById("pressings").style.display = "none";
+function changes() {
+    document.getElementById("cheese").style.display = "none";
+    document.getElementById("tomato").style.display = "block";
+    document.getElementById("bread").style.display = "block";
+    document.getElementById("ps5").style.display = "none";
 }
 
-function changes() {
-    document.getElementById("newish").style.display = "none";
-    document.getElementById("pressed").style.display = "block";
-    document.getElementById("pressing").style.display = "block";
+function changes2() {
+    document.getElementById("tomato").style.display = "block";
+    document.getElementById("ps5").style.display = "none";
+    document.getElementById("bread").style.display = "none";
 }
