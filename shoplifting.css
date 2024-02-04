@@ -5,14 +5,6 @@ button {
     -o-animation: moveX 3s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
     animation: moveX 3s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
   }
-  
-press {
-    position: absolute;
-    -webkit-animation: moveX 1s linear 0s infinite alternate, moveY 1.9s linear 0s infinite alternate;
-    -moz-animation: moveX 1s linear 0s infinite alternate, moveY 1.9s linear 0s infinite alternate;
-    -o-animation: moveX 1s linear 0s infinite alternate, moveY 1.9s linear 0s infinite alternate;
-    animation: moveX 1s linear 0s infinite alternate, moveY 1.9s linear 0s infinite alternate;
-  }
 
   @-webkit-keyframes moveX {
     from { left: 0; } to { left: 700px; }
@@ -47,7 +39,14 @@ press {
     height: 45px;
     background-size: cover;
     color: none; 
-    /*border: 1px solid #04AA6D;*/
+  }
+
+  .newish {
+    background: url("tomato.png") no-repeat; 
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    color: none; 
   }
   
   button:hover {
