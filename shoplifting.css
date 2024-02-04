@@ -26,6 +26,14 @@ button {
   animation: moveX 1s linear 0s infinite alternate, moveY2 5s linear 0s infinite alternate;
 }
 
+.button5 {
+  position: absolute;
+  -webkit-animation: moveX 1s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+  -moz-animation: moveX 1s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+  -o-animation: moveX 1s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+  animation: moveX 1s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+}
+
   @-webkit-keyframes moveX {
     from { left: 0; } to { left: 700px; }
   }
@@ -65,12 +73,26 @@ button {
     from { top: 0; } to { top: 200px; }
   }  
 
+  @-webkit-keyframes moveY5 {
+    from { top: 0; } to { top: 200px; }
+  }
+  @-moz-keyframes moveY5 {
+    from { top: 0; } to { top: 200px; }
+  }
+  @-o-keyframes moveY5 {
+    from { top: 0; } to { top: 200px; }
+  }
+  @keyframes moveY5 {
+    from { top: 0; } to { top: 200px; }
+  }  
+
   button {
     background: url("cheese.png") no-repeat; 
     width: 45px;
     height: 45px;
     background-size: cover;
     color: none; 
+    border-width: 0px;
   }
 
   .button3 {
@@ -107,30 +129,6 @@ body {
     background-color: none;
 }
 
-/*.container {
-    display: flex;
-    display: block;
-    color: rgb(31, 162, 185);
-    width: 100%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}*/
-
-/*.middleBox {
-    display: flex;
-    display: block;
-    color: #9d2222;
-    width: 50%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-*/
 .hello {
   text-align: center;
   margin: 0 auto;
@@ -148,4 +146,20 @@ body {
   border-radius: 10px;
   border: 2px solid #60320f;
   overflow: hidden;
+}
+
+#cheese{
+  display: block;
+}
+
+#tomato{
+  display: block;
+}
+
+#bread{
+  display: block;
+}
+
+#ps5{
+  display: block;
 }

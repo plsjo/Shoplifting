@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="shoplifting.css">
-    <script src="shoplifting.js"></script>
-    <style>
-        p{
-            font-size: 20px;
-            margin: 0 auto;
-        }
-    </style> 
 </head>
 <body>
-    <h1> It's time to ShopLift! </h1>
+    <div class="hello">
+        <h1> It's time to ShopLift! </h1>
+    </div>
     <div class="box">
         <!-- <button id="press" onclick = "change()"></button> -->
-        <button id="cheese" class="button2" onclick = "changes()"></button>
-        <button id="tomato" class="button3 hiddenButton" onclick = "changes()"></button>
-        <button id = "bread" class="button4 hiddenButton" onclick = "changes2()"></button>
-        <button id = "ps5" class="button5" onclick = "changes2()"></button>
+        <button id="cheese" class="button2" onclick = "changes('cheese')"></button>
+        <button id="tomato" class="button3 hiddenButton" onclick = "changes('tomato')"></button>
+        <button id = "bread" class="button4 hiddenButton" onclick = "changes('bread')"></button>
+        <button id = "ps5" class="button5" onclick = "changes('ps5')"></button>
     </div>
-            <div class="background"></div>
+    <!-- <div class="background"></div> -->
+
+    <script src="shoplifting.js"></script>
 </body>
 </html>
