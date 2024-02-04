@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="shoplifting.css">
-    <script src="shoplifting.js"></script>
-    <style>
-        p{
-            font-size: 20px;
-            margin: 0 auto;
-        }
-    </style> 
 </head>
 <body>
-    <h1> It's time to ShopLift! </h1>
+    <div class="hello">
+        <h1> It's time to ShopLift! </h1>
+    </div>
     <div class="box">
         <!-- <button id="press" onclick = "change()"></button> -->
-        <button id="newish" class="button2" onclick = "changes()"></button>
-        <button id="pressed" class="button3 hiddenButton" onclick = "changes()"></button>
-        <button id = "pressing" class="button4 hiddenButton" onclick = "changes()"></button>
-        <button id = "pressings" class="button5" onclick = "changes()"></button>
+        <button id="cheese" class="button2 hiddenButton" onclick = "changes('cheese')"></button>
+        <button id="tomato" class="button3 hiddenButton" onclick = "changes('tomato')"></button>
+        <button id="bread" class="button4" onclick = "changes('bread')"></button>
+        <button id="ps5" class="button5 hiddenButton" onclick = "changes('ps5')"></button>
+        <button id="milk" class="button6" onclick = "changes('milk')"></button>
     </div>
-            <div class="background"></div>
+
+    <div class="hello">
+        <p><em>We do not condone the act of shoplifting or theft in general.</em></p>
+    </div>
+    <div class = "ending">
+        <button id="redemption" class="buttonfinal" onclick="window.location.href = 'endgame.html' ">Turn yourself in.</button>
+    </div>
+    <!-- <div class="background"></div> -->
+
+    <script src="shoplifting.js"></script>
 </body>
 </html>

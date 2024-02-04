@@ -1,29 +1,87 @@
 button {
-    position: absolute;
-    -webkit-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-    -moz-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-    -o-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-    animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-  }
-
-.button2 {
+  width: 100px;
+  height: 45px;
+  background-size: cover;
+  color: black; 
+  border-width: 0px;
+}
+/*cheese*/
+.button2 { 
+  background: url("cheese.png") no-repeat; 
+  width: 45px;
+  height: 35px;
+  background-size: cover;
+  color: none; 
+  border-width: 0px;
   position: absolute;
-  -webkit-animation: moveX 4s linear 0s infinite alternate, moveY2 3.9s linear 0s infinite alternate;
-  -moz-animation: moveX 4s linear 0s infinite alternate, moveY2 3.9s linear 0s infinite alternate;
-  -o-animation: moveX 4s linear 0s infinite alternate, moveY2 3.9s linear 0s infinite alternate;
-  animation: moveX 4s linear 0s infinite alternate, moveY2 3.9s linear 0s infinite alternate;
+  -webkit-animation: moveX 3.5s linear 0s infinite alternate, moveY2 1.5s linear 0s infinite alternate;
+  -moz-animation: moveX 3.5s linear 0s infinite alternate, moveY2 1.5s linear 0s infinite alternate;
+  -o-animation: moveX 3.5s linear 0s infinite alternate, moveY2 1.5s linear 0s infinite alternate;
+  animation: moveX 3.5s linear 0s infinite alternate, moveY2 1.5s linear 0s infinite alternate;
 }
-
-.hiddenButton{
-  display: none;
-}
-
+/*tomato*/
 .button3 {
+  background: url("tomato.png") no-repeat; 
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  color: none; 
   position: absolute;
   -webkit-animation: moveX 1s linear 0s infinite alternate, moveY2 5s linear 0s infinite alternate;
   -moz-animation: moveX 1s linear 0s infinite alternate, moveY2 5s linear 0s infinite alternate;
   -o-animation: moveX 1s linear 0s infinite alternate, moveY2 5s linear 0s infinite alternate;
   animation: moveX 1s linear 0s infinite alternate, moveY2 5s linear 0s infinite alternate;
+}
+/*bread*/
+.button4 {
+  background: url("bread.png") no-repeat; 
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  color: none; 
+  position: absolute;
+  -webkit-animation: moveX4 1.9s linear 0s infinite alternate, moveY4 3.6s linear 0s infinite alternate;
+  -moz-animation: moveX4 1.9s linear 0s infinite alternate, moveY4 3.6s linear 0s infinite alternate;
+  -o-animation: moveX4 1.9s linear 0s infinite alternate, moveY4 3.6s linear 0s infinite alternate;
+  animation: moveX4 1.9s linear 0s infinite alternate, moveY4 3.6s linear 0s infinite alternate;
+}
+/*ps5*/
+.button5 {
+  background: url("ps5.png") no-repeat; 
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  color: none; 
+  position: absolute;
+  -webkit-animation: moveX 0.75s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+  -moz-animation: moveX 0.75s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+  -o-animation: moveX 0.75s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+  animation: moveX 0.75s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+}
+/*milk*/
+.button6 {
+  background: url("milk.png") no-repeat; 
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  color: none; 
+  position: absolute;
+  -webkit-animation: moveX6 1.7s linear 0s infinite alternate, moveY6 2.5s linear 0s infinite alternate;
+  -moz-animation: moveX6 1.7s linear 0s infinite alternate, moveY6 2.5s linear 0s infinite alternate;
+  -o-animation: moveX6 1.7s linear 0s infinite alternate, moveY6 2.5s linear 0s infinite alternate;
+  animation: moveX6 1.7s linear 0s infinite alternate, moveY6 2.5s linear 0s infinite alternate;
+}
+
+.button7 {
+    position: absolute;
+   -webkit-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
+    -moz-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
+    -o-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
+    animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
+  }
+
+.hiddenButton{
+  display: none;
 }
 
   @-webkit-keyframes moveX {
@@ -36,6 +94,19 @@ button {
     from { left: 0; } to { left: 700px; }
   } 
   @keyframes moveX {
+    from { left: 0; } to { left: 700px; }
+  }
+
+  @-webkit-keyframes moveX6 {
+    from { left: 0; } to { left: 700px; }
+  }
+  @-moz-keyframes moveX6 {
+    from { left: 0; } to { left: 700px; }
+  }
+  @-o-keyframes moveX6 {
+    from { left: 0; } to { left: 700px; }
+  } 
+  @keyframes moveX6 {
     from { left: 0; } to { left: 700px; }
   }
   
@@ -53,85 +124,90 @@ button {
   }  
   
   @-webkit-keyframes moveY2 {
-    from { top: 0; } to { top: 200px; }
+    from { top: 0; } to { top: 400px; }
   }
   @-moz-keyframes moveY2 {
-    from { top: 0; } to { top: 200px; }
+    from { top: 0; } to { top: 400px; }
   }
   @-o-keyframes moveY2 {
-    from { top: 0; } to { top: 200px; }
+    from { top: 0; } to { top: 400px; }
   }
   @keyframes moveY2 {
-    from { top: 0; } to { top: 200px; }
+    from { top: 0; } to { top: 400px; }
   }  
 
-  button {
-    background: url("cheese.png") no-repeat; 
-    width: 45px;
-    height: 45px;
-    background-size: cover;
-    color: none; 
+  @-webkit-keyframes moveY5 {
+    from { top: 0; } to { top: 500px; }
   }
+  @-moz-keyframes moveY5 {
+    from { top: 0; } to { top: 500px; }
+  }
+  @-o-keyframes moveY5 {
+    from { top: 0; } to { top: 500px; }
+  }
+  @keyframes moveY5 {
+    from { top: 0; } to { top: 500px; }
+  }  
 
-  .button3 {
-    background: url("tomato.png") no-repeat; 
-    width: 90px;
-    height: 90px;
-    background-size: cover;
-    color: none; 
+  @-webkit-keyframes moveY6 {
+    from { top: 0; } to { top: 500px; }
   }
-  
-  .button4 {
-    background: url("bread.png") no-repeat; 
-    width: 90px;
-    height: 90px;
-    background-size: cover;
-    color: none; 
+  @-moz-keyframes moveY6 {
+    from { top: 0; } to { top: 500px; }
   }
-  
-  .button5 {
-    background: url("ps5.jpeg") no-repeat; 
-    width: 45px;
-    height: 45px;
-    background-size: cover;
-    color: none; 
+  @-o-keyframes moveY6 {
+    from { top: 0; } to { top: 500px; }
   }
-  
-  
+  @keyframes moveY6 {
+    from { top: 0; } to { top: 500px; }
+  }  
+
+  @-webkit-keyframes moveY4 {
+    from { top: 0; } to { top: 500px; }
+  }
+  @-moz-keyframes moveY4 {
+    from { top: 0; } to { top: 500px; }
+  }
+  @-o-keyframes moveY4 {
+    from { top: 0; } to { top: 500px; }
+  }
+  @keyframes moveY4 {
+    from { top: 0; } to { top: 500px; }
+  }  
+
+  @-webkit-keyframes moveX4 {
+    from { left: 0; } to { left: 700px; }
+  }
+  @-moz-keyframes moveX4 {
+    from { left: 0; } to { left: 700px; }
+  }
+  @-o-keyframes moveX4 {
+    from { left: 0; } to { left: 700px; }
+  } 
+  @keyframes moveX4 {
+    from { left: 0; } to { left: 700px; }
+  }
+   
   button:hover {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #B56B45;
+    color: #E8DAB2;
   }
 
 body {
-    background-color: none;
+    background-color: #FFC07F;
 }
 
-/*.container {
-    display: flex;
-    display: block;
-    color: rgb(31, 162, 185);
-    width: 100%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}*/
-
-/*.middleBox {
-    display: flex;
-    display: block;
-    color: #9d2222;
-    width: 50%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-*/
 .hello {
+  text-align: center; 
+  margin: 0 auto;
+}
+
+.ending {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.finalscreen {
   text-align: center;
   margin: 0 auto;
 }
@@ -148,4 +224,33 @@ body {
   border-radius: 10px;
   border: 2px solid #60320f;
   overflow: hidden;
+}
+
+#start{
+  display: block;
+}
+
+#cheese{
+  display: block;
+}
+
+#tomato{
+  display: block;
+}
+
+#bread{
+  display: block;
+}
+
+#ps5{
+  display: block;
+}
+
+#milk{
+  display:block;
+}
+
+p{
+  margin: 3px;
+  padding: 0;
 }
