@@ -1,10 +1,30 @@
 button {
     position: absolute;
-    -webkit-animation: moveX 3s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-    -moz-animation: moveX 3s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-    -o-animation: moveX 3s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-    animation: moveX 3s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
+    -webkit-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
+    -moz-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
+    -o-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
+    animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
   }
+
+.button2 {
+  position: absolute;
+  -webkit-animation: moveX 4s linear 0s infinite alternate, moveY2 3.9s linear 0s infinite alternate;
+  -moz-animation: moveX 4s linear 0s infinite alternate, moveY2 3.9s linear 0s infinite alternate;
+  -o-animation: moveX 4s linear 0s infinite alternate, moveY2 3.9s linear 0s infinite alternate;
+  animation: moveX 4s linear 0s infinite alternate, moveY2 3.9s linear 0s infinite alternate;
+}
+
+.hiddenButton{
+  display: none;
+}
+
+.button3 {
+  position: absolute;
+  -webkit-animation: moveX 1s linear 0s infinite alternate, moveY2 5s linear 0s infinite alternate;
+  -moz-animation: moveX 1s linear 0s infinite alternate, moveY2 5s linear 0s infinite alternate;
+  -o-animation: moveX 1s linear 0s infinite alternate, moveY2 5s linear 0s infinite alternate;
+  animation: moveX 1s linear 0s infinite alternate, moveY2 5s linear 0s infinite alternate;
+}
 
   @-webkit-keyframes moveX {
     from { left: 0; } to { left: 700px; }
@@ -32,6 +52,18 @@ button {
     from { top: 0; } to { top: 535px; }
   }  
   
+  @-webkit-keyframes moveY2 {
+    from { top: 0; } to { top: 200px; }
+  }
+  @-moz-keyframes moveY2 {
+    from { top: 0; } to { top: 200px; }
+  }
+  @-o-keyframes moveY2 {
+    from { top: 0; } to { top: 200px; }
+  }
+  @keyframes moveY2 {
+    from { top: 0; } to { top: 200px; }
+  }  
 
   button {
     background: url("cheese.png") no-repeat; 
@@ -41,13 +73,30 @@ button {
     color: none; 
   }
 
-  .newish {
+  .button3 {
     background: url("tomato.png") no-repeat; 
     width: 90px;
     height: 90px;
     background-size: cover;
     color: none; 
   }
+  
+  .button4 {
+    background: url("bread.png") no-repeat; 
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    color: none; 
+  }
+  
+  .button5 {
+    background: url("ps5.jpeg") no-repeat; 
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    color: none; 
+  }
+  
   
   button:hover {
     background-color: #04AA6D;
