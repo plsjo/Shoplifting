@@ -7,7 +7,7 @@ import pandas as pd
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Users\\lin23\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract'
 
 # Read image from which text needs to be extracted
-img = cv2.imread("Sweet_Mama.jpeg")
+img = cv2.imread("Casa.jpg")
 
 # Preprocessing the image starts
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -36,24 +36,15 @@ for idx, cnt in enumerate(contours):
     else:  # Odd index corresponds to price
         item_price_dict[f'Item {idx // 2 + 1}']['price'] = text
 
-# Get the number of people to split the cost
-num_people = int(input("Enter the number of people to split the cost among: "))
-
-# Calculate the evenly split cost per person
-for key, value in item_price_dict.items():
-    price = float(value.get('price', 0))
-    value['even_split'] = price / num_people if num_people > 0 else 0
-
 # Construct a message for the OpenAI API
-message = f"Create a table with items, prices, and evenly split amounts for {num_people} people:\n\n"
+message = "Create a table with items and their corresponding prices:\n\n"
 for key, value in item_price_dict.items():
     item = value['item']
     price = value.get('price', 'N/A')  # Use 'N/A' if price is not available
-    even_split = value.get('even_split', 'N/A')  # Use 'N/A' if even_split is not available
-    message += f"| {item} | {price} | {even_split} |\n"
+    message += f"| {item} | {price} |\n"
 
 # Set your OpenAI API key
-openai.api_key = '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'
+openai.api_key = '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'
 
 # Use the chat/completions endpoint for ChatGPT Turbo
 response = openai.ChatCompletion.create(
@@ -75,5 +66,5 @@ for row in completion.split('\n'):
         else:
             data.append([k.strip() for k in row.split('|') if k!=''])
 
-df = pd.DataFrame(data=data, columns=['item', 'cost', 'even_split'])
+df = pd.DataFrame(data=data, columns=['item', 'cost'])
 print(df)
