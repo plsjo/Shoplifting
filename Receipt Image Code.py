@@ -36,15 +36,24 @@ for idx, cnt in enumerate(contours):
     else:  # Odd index corresponds to price
         item_price_dict[f'Item {idx // 2 + 1}']['price'] = text
 
+# Get the number of people to split the cost
+num_people = int(input("Enter the number of people to split the cost among: "))
+
+# Calculate the evenly split cost per person
+for key, value in item_price_dict.items():
+    price = float(value.get('price', 0))
+    value['even_split'] = price / num_people if num_people > 0 else 0
+
 # Construct a message for the OpenAI API
-message = "Create a table with items and their corresponding prices:\n\n"
+message = f"Create a table with items, prices, and evenly split amounts for {num_people} people:\n\n"
 for key, value in item_price_dict.items():
     item = value['item']
     price = value.get('price', 'N/A')  # Use 'N/A' if price is not available
-    message += f"| {item} | {price} |\n"
+    even_split = value.get('even_split', 'N/A')  # Use 'N/A' if even_split is not available
+    message += f"| {item} | {price} | {even_split} |\n"
 
 # Set your OpenAI API key
-openai.api_key = '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'
+openai.api_key = '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'
 
 # Use the chat/completions endpoint for ChatGPT Turbo
 response = openai.ChatCompletion.create(
@@ -66,5 +75,5 @@ for row in completion.split('\n'):
         else:
             data.append([k.strip() for k in row.split('|') if k!=''])
 
-df = pd.DataFrame(data=data, columns=['item', 'cost'])
+df = pd.DataFrame(data=data, columns=['item', 'cost', 'even_split'])
 print(df)
