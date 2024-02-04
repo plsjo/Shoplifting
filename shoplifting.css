@@ -72,13 +72,13 @@ button {
   animation: moveX6 1.7s linear 0s infinite alternate, moveY6 2.5s linear 0s infinite alternate;
 }
 
-/*.button7 {
+.button7 {
     position: absolute;
    -webkit-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
     -moz-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
     -o-animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
     animation: moveX 2s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-  }*/
+  }
 
 .hiddenButton{
   display: none;
