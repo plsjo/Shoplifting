@@ -16,9 +16,11 @@ function changes(buttID) {
     let rand = Math.floor(Math.random() * visibleButton.length);
     document.getElementById(buttID).style.display = "none";
     document.getElementById(visibleButton[rand]).style.display = "block";
-    /*let objap = hiddenButtons[rand];
 
-    visibleButton.splice(objdis, 1);
-
-    hiddenButtons.splice(obj);*/
+    // Increase score based on what item was clicked
+    let itemIndex = buttons.indexOf(buttID);
+    if (itemIndex !== -1) {
+        score += ptsd[itemIndex];
+        console.log("Score: " + score);  // Debugging hi
+    }
 }
